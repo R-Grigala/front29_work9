@@ -1,71 +1,197 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-	padding: 10px;
+body {
+  padding: 10px;
 }
 
-a{
-	color: black;
-	text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-img{
-	width: 100%;
+img {
+  width: 100%;
 }
 
-ul, ol, li{
-	list-style: none;
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 header {
-	background-color: white;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 20px 0;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 nav,
 nav li {
-	display: inline-block;
-	margin-right: 25px;
+  display: inline-block;
+  margin-right: 25px;
 }
 
-header li a{
-	color: #2E7AF4;
+header li a {
+  color: #2e7af4;
 }
 
-.slider{
-	padding-top: 90px;
+.slider {
+  padding-top: 90px;
 }
 
-.width-308{
-	width: 308px;
+.width-308 {
+  width: 308px;
 }
 
-.dots{
-	width: 61px;
+.dots {
+  width: 61px;
 }
 
-footer{
-	background-color: #1E2734;
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 150px;
+  background: #fff;
+  flex-wrap: wrap;
 }
 
-footer a, p{
-	color: #FFFFFF;
+.about-left {
+  max-width: 550px;
 }
 
-.social-media img{
-	width: 36px;
+.about-us {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.about-us .line {
+  width: 25px;
+  height: 2px;
+  background: #2e7af4;
+  display: inline-block;
+}
+
+.about-us p {
+  color: #2e7af4;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-left h2 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-left .text-1 {
+  color: #00000080;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.about-left .text-2 {
+  color: #00000080;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.watch-video {
+  margin-top: 30px;
+}
+
+/* მთავარი ღილაკი */
+.video-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #2e7af4;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.video-btn:hover {
+  background: #1c5ed6;
+}
+
+/* მრგვალი Play ელემენტი */
+.play-circle {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-icon {
+  color: #2e7af4;
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+/* მარჯვენა ნაწილი */
+.about-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.bg-box {
+  width: 400px;
+  height: 700px;
+  background: #effaff;
+  border-radius: 23px;
+  position: absolute;
+  top: -30px;
+  right: -150px;
+  z-index: 1;
+}
+
+.teacher-img {
+  width: 500px;
+  height: 600px;
+  border-radius: 23px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+footer {
+  background-color: #1e2734;
+}
+
+footer a,
+p {
+  color: #ffffff;
+}
+
+.social-media img {
+  width: 36px;
 }
 
 footer {
@@ -112,23 +238,23 @@ footer a {
 }
 
 .company ul li,
-.legal ul li{
+.legal ul li {
   margin-bottom: 8px;
 }
 
-.social-media{
+.social-media {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.social-media p{
+.social-media p {
   margin-bottom: 10px;
   margin-top: 20px;
   font-weight: bold;
 }
 
-.social-media a img{
+.social-media a img {
   width: 24px;
   height: 24px;
   margin-right: 10px;
@@ -136,31 +262,31 @@ footer a {
   transition: opacity 0.3s;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.block{
-	display: block;
+.block {
+  display: block;
 }
 
-.get-in-touch{
+.get-in-touch {
   display: flex;
   flex-direction: column;
   gap: 10px;
   max-width: 300px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
-.get-in-touch h3{
+.get-in-touch h3 {
   font-weight: 600;
   color: white;
   font-size: 16px;
 }
 
-.get-in-touch input{
+.get-in-touch input {
   padding: 12px 15px;
   border-radius: 6px;
   border: none;
@@ -168,9 +294,9 @@ footer a {
   outline: none;
 }
 
-button{
+button {
   padding: 12px 20px;
-  background-color: #2E7AF4;
+  background-color: #2e7af4;
   border: none;
   border-radius: 6px;
   color: white;
@@ -185,7 +311,7 @@ button:hover {
   background-color: #255ecf;
 }
 
-.social-media a img:hover{
+.social-media a img:hover {
   opacity: 0.7;
 }
 
@@ -206,36 +332,36 @@ footer a:hover {
   padding: 10px;
 }
 
-.relative h3{
-  top: 50%; 
+.relative h3 {
+  top: 50%;
   left: 18%;
-  color: #2E7AF4;
+  color: #2e7af4;
   font-size: 1.5vw;
 }
 
-.relative h1{
-  top: 55%; 
+.relative h1 {
+  top: 55%;
   left: 18%;
   font-size: 2.5vw;
 }
 
-.relative p{
-  top: 63%; 
+.relative p {
+  top: 63%;
   left: 18%;
   color: black;
   max-width: 500px;
   font-size: 1.2vw;
 }
 
-.relative button{
-  top: 75%; 
+.relative button {
+  top: 75%;
   left: 18%;
   font-size: 1.3vw;
   padding: 1vw;
 }
 
-.dots{
-  top: 90%; 
+.dots {
+  top: 90%;
   left: 50%;
   width: 6vw;
 }
