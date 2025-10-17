@@ -181,6 +181,54 @@ header li a {
   position: relative;
   z-index: 2;
 }
+
+/*team*/
+.our-team {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 120px;
+  background: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.member-labels {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.member-labels .label-line {
+  width: 25px;
+  height: 2px;
+  background: #2e7af4;
+  display: inline-block;
+}
+.member-labels p {
+  color: #2e7af4;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.team-member h3 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.members {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.members img {
+  width: 200px;
+  height: auto;
+}
+
 footer {
   background-color: #1e2734;
 }
